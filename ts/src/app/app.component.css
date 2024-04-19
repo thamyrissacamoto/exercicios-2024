@@ -237,6 +237,15 @@ header {
   padding-right: 8px;
 }
 
+.summary.expanded {
+  width: 1058px;
+  height: 560px;
+  top: 542px;
+  left: 1px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+}
+
 .header-summary {
   width: 1058px;
   height: 45px;
@@ -289,6 +298,36 @@ header {
   border: 1px 0px 0px 0px;
   border: 1px solid rgb(236, 236, 236);
   padding-right: 8px;
+}
+
+.discussion.expanded1 {
+  width: 1058px;
+  height: 800px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid rgb(236, 236, 236);
+  padding-right: 8px;
+  overflow: hidden;
+}
+
+.discussion.expanded2 {
+  width: 1058px;
+  height: 1315px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid rgb(236, 236, 236);
+  padding-right: 8px;
+  overflow: hidden;
+}
+
+.discussion.expanded3 {
+  width: 1058px;
+  height: 1400px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid rgb(236, 236, 236);
+  padding-right: 8px;
+  overflow: hidden;
 }
 
 .header-discussion {
@@ -584,6 +623,12 @@ header {
   border: 1px solid rgb(231, 231, 231);
 }
 
+.hr-btn.expanded {
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 380px;
+}
+
 .card2 {
   margin: 15px 20px 20px;
   width: 1027px;
@@ -658,6 +703,9 @@ header {
   flex-direction: row;
 }
 
+.card-footer1.expanded {
+  padding-top: 35px;
+}
 
 #lk1 {
   display: none;
@@ -748,6 +796,16 @@ header {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
 }
 
+.answered-topic.expanded {
+  cursor: pointer;
+  margin: 16px 20px;
+  width: 1028px;
+  height: 760px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid rgb(231, 231, 231);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+}
 
 .ops-topic-subject {
   width: 297px;
@@ -1047,4 +1105,43 @@ header {
   gap: 0px;
   opacity: 0px;
   margin-left: 220px;
+}
+
+@media screen and (min-width: 1500px) {
+  .dropdown {
+    left: 52%;
+    top: 1.5%;
+  }
+  .welcome {
+    left: 64%;
+    top: 5px;
+  }
+  .email {
+    left: 59%;
+    top: 25px;
+  }
+  .img-user {
+    left: 68%;
+    top: 20px;
+  }
+  .notification {
+    left: 69.2%;
+    top: 10px;
+  }
+  .card-right {
+    left: 62%;
+    top: 9.5%;
+  }
+  .text-right {
+    left: 67%;
+    top: 11%;
+  }
+  .details {
+    left: 64%;
+    top: 38%;
+  }
+  .feedback-txt {
+    margin-left: 19.5%;
+    margin-top: 1.5%;
+  }
 }

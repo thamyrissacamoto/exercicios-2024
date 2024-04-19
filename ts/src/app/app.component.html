@@ -67,7 +67,7 @@
         <a href="#" class="nav-font">Contato</a>
       </div>
     </nav>
-----------------------
+    
     <div class="container">
       <div class="content">
         <h2 class="title-content">Análise sensorial de preparações funcionais desenvolvidas para escolares entre
@@ -106,7 +106,7 @@
               sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam
               dictum nisl, vel
               aliquet enim accumsan sit ametl accumsant...</span>
-            <a class="btn-show-more">ver mais</a>
+            <a (click)="toggleSummary()" class="btn-show-more">ver mais</a>
 
             <span id="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae
               turpis auctor,
@@ -189,7 +189,7 @@
               seus questionamentos ou sugestões para o autor!</p>
           </div>
           <hr class="hr-btn">
-          <button class="btn-create-topic">
+          <button class="btn-create-topic" (click)="showForm()">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg"
               viewBox="0 0 16 16">
               <path fill-rule="evenodd"
@@ -208,7 +208,7 @@
             <label for="conteudo" class="form-label">Conteúdo</label><br>
             <textarea id="conteudo" class="form-input1" rows="4" required></textarea>
             <div class="form-btn-border">
-              <button type="submit" class="form-btn">Enviar</button>
+              <button type="submit" class="form-btn" (click)="sendForm()">Enviar</button>
             </div>
           </form>
         </div>
@@ -220,7 +220,7 @@
             que seu tópico for respondido!</p>
           <p class="underline">Descubra outros trabalhos!</p>
           <hr class="hr-btn">
-          <button class="btn">criar novo tópico</button>
+          <button class="btn" (click)="showForm()">criar novo tópico</button>
         </div>
 
         <div class="div-feedback">
@@ -276,7 +276,7 @@
           </div>
         </div>
 
-        <div class="answered-topic">
+        <div class="answered-topic" (click)="toggleDiscussion()">
           <div class="card-header">
             <h3 class="ops-topic-subject">Assunto da pergunta aparece aqui</h3>
             <p class="card-name">Carlos Henrique Santos</p>
